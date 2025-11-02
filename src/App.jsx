@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useRef, useState, useMemo } from "react";
 import characters from "./data/characters";
 import "./App.css";
 
@@ -11,7 +11,7 @@ const effectCategories = {
   },
   buffs: {
     label: "味方へのバフ",
-    targets: ["自身", "味方全体", "自身を除く味方全体"],
+    targets: ["自身", "味方単体", "味方全体", "自身を除く味方全体"],
     effects: [
       "攻撃力をアップ",
       "Busterカード性能をアップ",
@@ -45,7 +45,9 @@ const effectCategories = {
       "呪い状態を付与",
       "魅了状態を付与",
       "弱体耐性をダウン",
+      "その他", // 対象を持たない
     ],
+    targetless: ["その他"], // ★ 対象なし指定
   },
 };
 
@@ -85,6 +87,10 @@ export default function App() {
   const [filterMode, setFilterMode] = useState("OR");
   const [expanded, setExpanded] = useState([]);
   const [filterOpen, setFilterOpen] = useState({ skills: false, np: false });
+
+  // 各タブの位置を参照するref
+  const skillSectionRef = useRef(null);
+  const npSectionRef = useRef(null);
 
   const toggleArrayValue = (arr, value) =>
     arr.includes(value) ? arr.filter(x => x !== value) : [...arr, value];
@@ -130,7 +136,28 @@ export default function App() {
 
   const toggleExpand = name => setExpanded(prev => prev.includes(name) ? prev.filter(n => n !== name) : [...prev, name]);
   const closeAll = () => setExpanded([]);
-  const toggleFilterSection = section => setFilterOpen(prev => ({ ...prev, [section]: !prev[section] }));
+  const toggleFilterSection = section => {
+    setFilterOpen(prev => {
+      const isCurrentlyOpen = prev[section];
+      const next = { ...prev, [section]: !isCurrentlyOpen };
+  
+      // 「閉じる時だけ」スクロール位置をボタンまで戻す
+      if (isCurrentlyOpen) {
+        setTimeout(() => {
+          const targetRef =
+            section === "skills" ? skillSectionRef.current : npSectionRef.current;
+          if (targetRef) {
+            targetRef?.scrollIntoView({ behavior: "auto", block: "start" });
+            setTimeout(() => {
+              window.scrollBy({ top: -50, behavior: "auto" });
+            }, 100);
+          }
+        }, 100); // state反映後にスクロール
+      }
+  
+      return next;
+    });
+  };
 
   const effectsMatch = (entityEffects, selectedEffects) => {
     if (!selectedEffects.length) return true;
@@ -226,7 +253,7 @@ export default function App() {
       {/* スキル効果フィルター */}
       <section 
         style={{ 
-          marginBottom: 18, 
+          marginBottom: 1, 
           background: "#fff", 
           color: "#000", 
           padding: 12, 
@@ -234,6 +261,7 @@ export default function App() {
         }}
       >
         <h3 
+          ref={skillSectionRef}
           style={{ marginTop: 0, cursor: "pointer" }} 
           onClick={() => toggleFilterSection("skills")}
         >
@@ -278,11 +306,26 @@ export default function App() {
           </div>
         ))}
       </section>
+      {/* スキル効果開閉（下部） */}
+      <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", marginBottom: 8 }}>
+        <div>
+          <button 
+            onClick={() => toggleFilterSection("skills")} 
+            style={{ 
+              padding: "1px 10px", 
+              borderRadius: 6, 
+              border: "1px solid #ddd", 
+              background: "#000", 
+              color: "#fff" 
+            }}
+          >スキル効果 {filterOpen.np ? "▲" : "▼"}</button>
+        </div>
+      </div>
 
       {/* 宝具効果フィルター */}
       <section 
         style={{ 
-          marginBottom: 18, 
+          marginBottom: 1, 
           background: "#fff", 
           color: "#000", 
           padding: 12, 
@@ -290,6 +333,7 @@ export default function App() {
         }}
       >
         <h3 
+          ref={npSectionRef}
           style={{ marginTop: 0, cursor: "pointer" }} 
           onClick={() => toggleFilterSection("np")}
         >
@@ -334,12 +378,36 @@ export default function App() {
           </div>
         ))}
       </section>
+      {/* 宝具効果開閉（下部） */}
+      <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", marginBottom: 8 }}>
+        <div>
+          <button 
+            onClick={() => toggleFilterSection("np")} 
+            style={{ 
+              padding: "1px 10px", 
+              borderRadius: 6, 
+              border: "1px solid #ddd", 
+              background: "#000", 
+              color: "#fff" 
+            }}
+          >宝具効果 {filterOpen.np ? "▲" : "▼"}</button>
+        </div>
+      </div>
 
       {/* 検索結果ヘッダ */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
         <h3 style={{ margin: 0 }}>検索結果 ({results.length}件)</h3>
         <div>
-          <button onClick={closeAll} style={{ padding: "6px 10px", borderRadius: 6, border: "1px solid #ddd", background: "#fff", color: "#000" }}>一括閉じる</button>
+          <button 
+            onClick={closeAll} 
+            style={{ 
+              padding: "6px 10px", 
+              borderRadius: 6, 
+              border: "1px solid #ddd", 
+              background: "#fff", 
+              color: "#000" 
+            }}
+          >一括閉じる</button>
         </div>
       </div>
 
