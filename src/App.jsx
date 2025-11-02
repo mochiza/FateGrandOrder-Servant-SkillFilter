@@ -52,7 +52,7 @@ const effectCategories = {
 const rarities = [0, 1, 2, 3, 4, 5];
 const classes = ["剣", "弓", "槍", "騎", "術", "殺", "狂", "裁", "讐", "分", "月", "降", "詐", "獣", "盾"];
 const npAttributes = ["Buster", "Arts", "Quick"];
-const npTargets = ["敵全体", "敵単体", "補助"];
+const npTargets = ["全体", "単体", "補助"];
 
 function buildEffectGroups(forNoblePhantasm = false) {
   const groups = [];

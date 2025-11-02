@@ -1,6741 +1,6763 @@
 const characters = [
   {
-    'name': 'マシュ・キリエライト',
-    'rarity': 4,
-    'class': '盾',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
-      ]
-    },
-    'skills': [
-      {},
+    "name": "マシュ・キリエライト",
+    "rarity": 4,
+    "class": "盾",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
+      ]
+    },
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        { key: ["NPを増やす(20%)（自身）", "NPを増やす(30%)（自身）", "NPを増やす(50%)（自身）"], text: "自身のNPチャージ(OC:20〜50%)" },
+    "name": "アルトリア・ペンドラゴン",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {
+          "key": [
+            "NPを増やす(20%)（自身）",
+            "NPを増やす(30%)（自身）",
+            "NPを増やす(50%)（自身）"
+          ],
+          "text": "自身のNPチャージ(OC:20〜50%)"
+        }
       ]
     },
-    'skills': [
-      { key: "攻撃力をアップ（味方全体）", text: "味方全体の攻撃力アップ(3T/9〜18%)" },
-      { key: ["Busterカード性能をアップ（自身）", "宝具威力をアップ（自身）"], text: "自身のバスター性能アップ(1T/30〜50%)&宝具威力アップ(1T/20〜30%)&全コマンドカードをバスターに変化させる(1T)" },
-      { key: ["スターを獲得", "NPを増やす(30%)（自身）"], text: "スター獲得(5〜15個)+自身のNPチャージ(20〜30%)" },
+    "skills": [
+      {
+        "key": "攻撃力をアップ（味方全体）",
+        "text": "味方全体の攻撃力アップ(3T/9〜18%)"
+      },
+      {
+        "key": [
+          "Busterカード性能をアップ（自身）",
+          "宝具威力をアップ（自身）"
+        ],
+        "text": "自身のバスター性能アップ(1T/30〜50%)&宝具威力アップ(1T/20〜30%)&全コマンドカードをバスターに変化させる(1T)"
+      },
+      {
+        "key": [
+          "スターを獲得",
+          "NPを増やす(30%)（自身）"
+        ],
+        "text": "スター獲得(5〜15個)+自身のNPチャージ(20〜30%)"
+      }
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（オルタ）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（オルタ）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（リリィ）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（リリィ）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ネロ・クラウディウス',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ネロ・クラウディウス",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジークフリート',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジークフリート",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ガイウス・ユリウス・カエサル',
-    'rarity': 3,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ガイウス・ユリウス・カエサル",
+    "rarity": 3,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルテラ',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルテラ",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジル・ド・レェ',
-    'rarity': 3,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジル・ド・レェ",
+    "rarity": 3,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シュヴァリエ・デオン',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シュヴァリエ・デオン",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エミヤ',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エミヤ",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ギルガメッシュ',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ギルガメッシュ",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ロビンフッド',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ロビンフッド",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アタランテ',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アタランテ",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エウリュアレ',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エウリュアレ",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アーラシュ',
-    'rarity': 1,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アーラシュ",
+    "rarity": 1,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クー・フーリン',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クー・フーリン",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エリザベート・バートリー',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エリザベート・バートリー",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '武蔵坊弁慶',
-    'rarity': 2,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "武蔵坊弁慶",
+    "rarity": 2,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クー・フーリン（プロトタイプ）',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クー・フーリン（プロトタイプ）",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'レオニダス一世',
-    'rarity': 2,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "レオニダス一世",
+    "rarity": 2,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ロムルス',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ロムルス",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メドゥーサ',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メドゥーサ",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ゲオルギウス',
-    'rarity': 2,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ゲオルギウス",
+    "rarity": 2,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エドワード・ティーチ',
-    'rarity': 2,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エドワード・ティーチ",
+    "rarity": 2,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ブーディカ',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ブーディカ",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '牛若丸',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "牛若丸",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アレキサンダー',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アレキサンダー",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マリー・アントワネット',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マリー・アントワネット",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マルタ',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マルタ",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メディア',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メディア",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジル・ド・レェ（キャスター）',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジル・ド・レェ（キャスター）",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ハンス・クリスチャン・アンデルセン',
-    'rarity': 2,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ハンス・クリスチャン・アンデルセン",
+    "rarity": 2,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ウィリアム・シェイクスピア',
-    'rarity': 2,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ウィリアム・シェイクスピア",
+    "rarity": 2,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メフィストフェレス',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メフィストフェレス",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴォルフガング・アマデウス・モーツァルト',
-    'rarity': 1,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴォルフガング・アマデウス・モーツァルト",
+    "rarity": 1,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '諸葛孔明',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "諸葛孔明",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クー・フーリン（キャスター）',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クー・フーリン（キャスター）",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '佐々木小次郎',
-    'rarity': 1,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "佐々木小次郎",
+    "rarity": 1,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '呪腕のハサン',
-    'rarity': 2,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "呪腕のハサン",
+    "rarity": 2,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ステンノ',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ステンノ",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '荊軻',
-    'rarity': 3,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "荊軻",
+    "rarity": 3,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シャルル＝アンリ・サンソン',
-    'rarity': 2,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シャルル＝アンリ・サンソン",
+    "rarity": 2,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ファントム・オブ・ジ・オペラ',
-    'rarity': 2,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ファントム・オブ・ジ・オペラ",
+    "rarity": 2,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マタ・ハリ',
-    'rarity': 1,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マタ・ハリ",
+    "rarity": 1,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カーミラ',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カーミラ",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヘラクレス',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヘラクレス",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ランスロット',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ランスロット",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '呂布奉先',
-    'rarity': 3,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "呂布奉先",
+    "rarity": 3,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スパルタクス',
-    'rarity': 1,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スパルタクス",
+    "rarity": 1,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '坂田金時',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "坂田金時",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴラド三世',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴラド三世",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アステリオス',
-    'rarity': 1,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アステリオス",
+    "rarity": 1,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カリギュラ',
-    'rarity': 2,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カリギュラ",
+    "rarity": 2,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ダレイオス三世',
-    'rarity': 3,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ダレイオス三世",
+    "rarity": 3,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '清姫',
-    'rarity': 3,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "清姫",
+    "rarity": 3,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エイリーク・ブラッドアクス',
-    'rarity': 2,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エイリーク・ブラッドアクス",
+    "rarity": 2,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'タマモキャット',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "タマモキャット",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャンヌ・ダルク',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャンヌ・ダルク",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'オリオン',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "オリオン",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エリザベート・バートリー（ハロウィン）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エリザベート・バートリー（ハロウィン）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '玉藻の前',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "玉藻の前",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ダビデ',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ダビデ",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヘクトール',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヘクトール",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'フランシス・ドレイク',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "フランシス・ドレイク",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アン・ボニー＆メアリー・リード',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アン・ボニー＆メアリー・リード",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メディア（リリィ）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メディア（リリィ）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '沖田総司',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "沖田総司",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '織田信長',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "織田信長",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スカサハ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スカサハ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ディルムッド・オディナ',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ディルムッド・オディナ",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'フェルグス・マック・ロイ',
-    'rarity': 3,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "フェルグス・マック・ロイ",
+    "rarity": 3,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（サンタオルタ）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（サンタオルタ）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ナーサリー・ライム',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ナーサリー・ライム",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャック・ザ・リッパー',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャック・ザ・リッパー",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'モードレッド',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "モードレッド",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ニコラ・テスラ',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ニコラ・テスラ",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（槍オルタ）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（槍オルタ）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴァン・ホーエンハイム・パラケルスス',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴァン・ホーエンハイム・パラケルスス",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'チャールズ・バベッジ',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "チャールズ・バベッジ",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヘンリー・ジキル＆ハイド',
-    'rarity': 3,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヘンリー・ジキル＆ハイド",
+    "rarity": 3,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'フランケンシュタイン',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "フランケンシュタイン",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルジュナ',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルジュナ",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カルナ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カルナ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '謎のヒロインX',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "謎のヒロインX",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'フィン・マックール',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "フィン・マックール",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ブリュンヒルデ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ブリュンヒルデ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ベオウルフ',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ベオウルフ",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ネロ・クラウディウス（ブライド）',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ネロ・クラウディウス（ブライド）",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '両儀式（セイバー）',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "両儀式（セイバー）",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '両儀式（アサシン）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "両儀式（アサシン）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '天草四郎',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "天草四郎",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アストルフォ',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アストルフォ",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '子ギル',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "子ギル",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '巌窟王エドモン・ダンテス',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "巌窟王エドモン・ダンテス",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ナイチンゲール',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ナイチンゲール",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クー・フーリン（オルタ）',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クー・フーリン（オルタ）",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メイヴ',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メイヴ",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エレナ・ブラヴァツキー',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エレナ・ブラヴァツキー",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ラーマ',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ラーマ",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '神槍李書文',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "神槍李書文",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'トーマス・エジソン',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "トーマス・エジソン",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジェロニモ',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジェロニモ",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ビリー・ザ・キッド',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ビリー・ザ・キッド",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャンヌ・ダルク（オルタ）',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャンヌ・ダルク（オルタ）",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アンリマユ',
-    'rarity': 0,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アンリマユ",
+    "rarity": 0,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イスカンダル',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イスカンダル",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エミヤ（アサシン）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エミヤ（アサシン）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '百貌のハサン',
-    'rarity': 3,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "百貌のハサン",
+    "rarity": 3,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アイリスフィール（天の衣）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アイリスフィール（天の衣）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '酒呑童子',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "酒呑童子",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '玄奘三蔵',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "玄奘三蔵",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '源頼光',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "源頼光",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '坂田金時（ライダー）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "坂田金時（ライダー）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '茨木童子',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "茨木童子",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '風魔小太郎',
-    'rarity': 3,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "風魔小太郎",
+    "rarity": 3,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'オジマンディアス',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "オジマンディアス",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（ランサー）',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（ランサー）",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ニトクリス',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ニトクリス",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ランスロット（セイバー）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ランスロット（セイバー）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'トリスタン',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "トリスタン",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ガウェイン',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ガウェイン",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '静謐のハサン',
-    'rarity': 3,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "静謐のハサン",
+    "rarity": 3,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '俵藤太',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "俵藤太",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ベディヴィエール',
-    'rarity': 3,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ベディヴィエール",
+    "rarity": 3,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'レオナルド・ダ・ヴィンチ',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "レオナルド・ダ・ヴィンチ",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '玉藻の前（水着）',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "玉藻の前（水着）",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（水着）',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（水着）",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マリー・アントワネット（水着）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マリー・アントワネット（水着）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アン・ボニー＆メアリー・リード（水着）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アン・ボニー＆メアリー・リード（水着）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'モードレッド（水着）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "モードレッド（水着）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スカサハ（アサシン）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スカサハ（アサシン）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '清姫（水着）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "清姫（水着）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マルタ（水着）',
-    'rarity': 4,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マルタ（水着）",
+    "rarity": 4,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イリヤスフィール・フォン・アインツベルン',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イリヤスフィール・フォン・アインツベルン",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クロエ・フォン・アインツベルン',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クロエ・フォン・アインツベルン",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エリザベート・バートリー（ブレイブ）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エリザベート・バートリー（ブレイブ）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クレオパトラ',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クレオパトラ",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴラド三世（EXTRA）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴラド三世（EXTRA）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャンヌ・ダルク・オルタ・サンタ・リリィ',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イシュタル',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イシュタル",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エルキドゥ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エルキドゥ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ケツァル・コアトル',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ケツァル・コアトル",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ギルガメッシュ（キャスター）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ギルガメッシュ（キャスター）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メドゥーサ（ランサー）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メドゥーサ（ランサー）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ゴルゴーン',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ゴルゴーン",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャガーマン',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャガーマン",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マーリン',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マーリン",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '宮本武蔵',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "宮本武蔵",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '山の翁',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "山の翁",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '謎のヒロインX（オルタ）',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "謎のヒロインX（オルタ）",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'モリアーティ',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "モリアーティ",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エミヤ（オルタ）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エミヤ（オルタ）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヘシアン・ロボ',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヘシアン・ロボ",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '燕青',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "燕青",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アーサー・ペンドラゴン（プロトタイプ）',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アーサー・ペンドラゴン（プロトタイプ）",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '土方歳三',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "土方歳三",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '茶々',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "茶々",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メルトリリス',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メルトリリス",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'パッションリップ',
-    'rarity': 4,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "パッションリップ",
+    "rarity": 4,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '鈴鹿御前',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "鈴鹿御前",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'BB',
-    'rarity': 4,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "BB",
+    "rarity": 4,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '殺生院キアラ',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "殺生院キアラ",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シェヘラザード',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シェヘラザード",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '武則天',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "武則天",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ペンテシレイア',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ペンテシレイア",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'コロンブス',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "コロンブス",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シャーロック・ホームズ',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シャーロック・ホームズ",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ポール・バニヤン',
-    'rarity': 1,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ポール・バニヤン",
+    "rarity": 1,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ネロ・クラウディウス（水着）',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ネロ・クラウディウス（水着）",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'フランケンシュタイン（水着）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "フランケンシュタイン（水着）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ニトクリス（水着）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ニトクリス（水着）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '織田信長（水着）',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "織田信長（水着）",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（オルタ・メイド）',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（オルタ・メイド）",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エレナ・ブラヴァツキー（水着）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エレナ・ブラヴァツキー（水着）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '源頼光（水着）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "源頼光（水着）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イシュタル（水着）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イシュタル（水着）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'パールヴァティー',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "パールヴァティー",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '巴御前',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "巴御前",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '望月千代女',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "望月千代女",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '宝蔵院胤舜',
-    'rarity': 3,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "宝蔵院胤舜",
+    "rarity": 3,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '柳生但馬守宗矩',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "柳生但馬守宗矩",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '加藤段蔵',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "加藤段蔵",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '刑部姫',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "刑部姫",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メカエリチャン',
-    'rarity': 4,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メカエリチャン",
+    "rarity": 4,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メカエリチャン２号機',
-    'rarity': 4,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メカエリチャン２号機",
+    "rarity": 4,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'キルケー',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "キルケー",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アビゲイル・ウィリアムズ',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アビゲイル・ウィリアムズ",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シバの女王',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シバの女王",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '哪吒',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "哪吒",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エレシュキガル',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エレシュキガル",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルテラ（サンタ）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルテラ（サンタ）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '葛飾北斎',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "葛飾北斎",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'セミラミス',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "セミラミス",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '浅上藤乃',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "浅上藤乃",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アナスタシア',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アナスタシア",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アタランテ（オルタ）',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アタランテ（オルタ）",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アヴィケブロン',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アヴィケブロン",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アントニオ・サリエリ',
-    'rarity': 3,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アントニオ・サリエリ",
+    "rarity": 3,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イヴァン雷帝',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イヴァン雷帝",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マシュ（オルテナウス）',
-    'rarity': 4,
-    'class': '盾',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マシュ（オルテナウス）",
+    "rarity": 4,
+    "class": "盾",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アキレウス',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アキレウス",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ケイローン',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ケイローン",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジーク',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジーク",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '沖田総司オルタ',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "沖田総司オルタ",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '岡田以蔵',
-    'rarity': 3,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "岡田以蔵",
+    "rarity": 3,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '坂本龍馬',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "坂本龍馬",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ナポレオン',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ナポレオン",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シグルド',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シグルド",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ワルキューレ',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ワルキューレ",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スカサハ＝スカディ',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スカサハ＝スカディ",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャンヌ・ダルク（水着）',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャンヌ・ダルク（水着）",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '茨木童子（水着）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "茨木童子（水着）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '牛若丸（水着）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "牛若丸（水着）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャンヌ・ダルク（オルタ・水着）',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャンヌ・ダルク（オルタ・水着）",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'BB（水着）',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "BB（水着）",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '女王メイヴ（水着）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "女王メイヴ（水着）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '謎のヒロインX（水着）',
-    'rarity': 4,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "謎のヒロインX（水着）",
+    "rarity": 4,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ディルムッド・オディナ（セイバー）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ディルムッド・オディナ（セイバー）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シトナイ',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シトナイ",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '酒呑童子（キャスター）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "酒呑童子（キャスター）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '項羽',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "項羽",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '蘭陵王',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "蘭陵王",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '秦良玉',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "秦良玉",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '始皇帝',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "始皇帝",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '虞美人',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "虞美人",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '赤兎馬',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "赤兎馬",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ブラダマンテ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ブラダマンテ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ケツァルサンタ',
-    'rarity': 4,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ケツァルサンタ",
+    "rarity": 4,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '紅閻魔',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "紅閻魔",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '李書文（アサシン）',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "李書文（アサシン）",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '美遊・エーデルフェルト',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "美遊・エーデルフェルト",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '紫式部',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "紫式部",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'キングプロテア',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "キングプロテア",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カーマ',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カーマ",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ライネス（司馬懿）',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ライネス（司馬懿）",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アストライア',
-    'rarity': 4,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アストライア",
+    "rarity": 4,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'グレイ',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "グレイ",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジナコ',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジナコ",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ラクシュミー・バーイー',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ラクシュミー・バーイー",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ウィリアム・テル',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ウィリアム・テル",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルジュナオルタ',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルジュナオルタ",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アシュヴァッターマン',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アシュヴァッターマン",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アスクレピオス',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アスクレピオス",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '魔王信長',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "魔王信長",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '森長可',
-    'rarity': 3,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "森長可",
+    "rarity": 3,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '長尾景虎',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "長尾景虎",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ダヴィンチライダー',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ダヴィンチライダー",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イアソン',
-    'rarity': 1,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イアソン",
+    "rarity": 1,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'パリス',
-    'rarity': 2,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "パリス",
+    "rarity": 2,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ガレス',
-    'rarity': 2,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ガレス",
+    "rarity": 2,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'バーソロミュー',
-    'rarity': 1,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "バーソロミュー",
+    "rarity": 1,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '陳宮',
-    'rarity': 2,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "陳宮",
+    "rarity": 2,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シャルロット',
-    'rarity': 1,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シャルロット",
+    "rarity": 1,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'サロメ',
-    'rarity': 2,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "サロメ",
+    "rarity": 2,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着宮本武蔵',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着宮本武蔵",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着刑部姫',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着刑部姫",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着カーミラ',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着カーミラ",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着北斎',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着北斎",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリア・ペンドラゴン（ルーラー）',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリア・ペンドラゴン（ルーラー）",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着メルトリリス',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着メルトリリス",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着沖田総司',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着沖田総司",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スペース・イシュタル',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スペース・イシュタル",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カラミティ・ジェーン',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カラミティ・ジェーン",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アストルフォ（セイバー）',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アストルフォ（セイバー）",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ナイチンゲール（サンタ）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ナイチンゲール（サンタ）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '超人オリオン',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "超人オリオン",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マンドリカルド',
-    'rarity': 3,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マンドリカルド",
+    "rarity": 3,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エウロペ',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エウロペ",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '楊貴妃',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "楊貴妃",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '清少納言',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "清少納言",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'オデュッセウス',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "オデュッセウス",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ディオスクロイ',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ディオスクロイ",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カイニス',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カイニス",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ロムルスクィリヌス',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ロムルスクィリヌス",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ボイジャー',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ボイジャー",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '鬼女紅葉',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "鬼女紅葉",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '宇津見エリセ',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "宇津見エリセ",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アルトリアキャスター',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アルトリアキャスター",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '殺生院キアラ（水着）',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "殺生院キアラ（水着）",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'イリヤスフィール・フォン・アインツベルン（水着）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "イリヤスフィール・フォン・アインツベルン（水着）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ブリュンヒルデ（水着）',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ブリュンヒルデ（水着）",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '虞美人（水着）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "虞美人（水着）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アビゲイル（水着）',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アビゲイル（水着）",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '巴御前（水着）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "巴御前（水着）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '紫式部（水着）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "紫式部（水着）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '卑弥呼',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "卑弥呼",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '斎藤一',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "斎藤一",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '織田信勝',
-    'rarity': 1,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "織田信勝",
+    "rarity": 1,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴァン・ゴッホ',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴァン・ゴッホ",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ネモ',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ネモ",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '蘆屋道満',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "蘆屋道満",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '渡辺綱',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "渡辺綱",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '伊吹童子',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "伊吹童子",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴリトラ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴリトラ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カルナ（サンタ）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カルナ（サンタ）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '千子村正',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "千子村正",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '平景清',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "平景清",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '鬼一法眼',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "鬼一法眼",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カレン・C・オルテンシア',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カレン・C・オルテンシア",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ガラテア',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ガラテア",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ミス・クレーン',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ミス・クレーン",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '謎のアイドルX（オルタ）',
-    'rarity': 4,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "謎のアイドルX（オルタ）",
+    "rarity": 4,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'モルガン',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "モルガン",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '妖精騎士ガウェイン',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "妖精騎士ガウェイン",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '妖精騎士トリスタン',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "妖精騎士トリスタン",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '妖精騎士ランスロット',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "妖精騎士ランスロット",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'パーシヴァル',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "パーシヴァル",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '光のコヤンスカヤ',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "光のコヤンスカヤ",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ハベトロット',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ハベトロット",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'オベロン',
-    'rarity': 5,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "オベロン",
+    "rarity": 5,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '沖田オルタ（水着）',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "沖田オルタ（水着）",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アナスタシア（水着）',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アナスタシア（水着）",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'コルデー（水着）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "コルデー（水着）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ダヴィンチ（水着）',
-    'rarity': 4,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ダヴィンチ（水着）",
+    "rarity": 4,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カーマ（水着）',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カーマ（水着）",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カイニス（水着）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カイニス（水着）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '清少納言（水着）',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "清少納言（水着）",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジャック・ド・モレー',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジャック・ド・モレー",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ゼノビア',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ゼノビア",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'エリザベート（シンデレラ）',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "エリザベート（シンデレラ）",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '出雲阿国',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "出雲阿国",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '謎の蘭丸X',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "謎の蘭丸X",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '坂本龍馬（ランサー）',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "坂本龍馬（ランサー）",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マルタ（サンタ）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マルタ（サンタ）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '太公望',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "太公望",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ドブルイニャ・ニキチッチ',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ドブルイニャ・ニキチッチ",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '闇のコヤンスカヤ',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "闇のコヤンスカヤ",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヘファイスティオン',
-    'rarity': 4,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヘファイスティオン",
+    "rarity": 4,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'バゼット',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "バゼット",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '徴姉妹',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "徴姉妹",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '太歳星君',
-    'rarity': 4,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "太歳星君",
+    "rarity": 4,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スーパーバニヤン',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スーパーバニヤン",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '大黒天',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "大黒天",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メアリー・アニング',
-    'rarity': 1,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メアリー・アニング",
+    "rarity": 1,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'コンスタンティノス11世',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "コンスタンティノス11世",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シャルルマーニュ',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シャルルマーニュ",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ローラン',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ローラン",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'クリームヒルト',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "クリームヒルト",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'モリアーティ（ルーラー）',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "モリアーティ（ルーラー）",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ドン・キホーテ',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ドン・キホーテ",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '張角',
-    'rarity': 3,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "張角",
+    "rarity": 3,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '曲亭馬琴',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "曲亭馬琴",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '源為朝',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "源為朝",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アーキタイプアース',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アーキタイプアース",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '徐福',
-    'rarity': 3,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "徐福",
+    "rarity": 3,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'プロトタイプマーリン',
-    'rarity': 5,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "プロトタイプマーリン",
+    "rarity": 5,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ガレス（水着）',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ガレス（水着）",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '伊吹童子（水着）',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "伊吹童子（水着）",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '宇津見エリセ（水着）',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "宇津見エリセ（水着）",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スルーズ（水着）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スルーズ（水着）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヒルド（水着）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヒルド（水着）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'オルトリンデ（水着）',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "オルトリンデ（水着）",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スカサハスカディ（水着）',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スカサハスカディ（水着）",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '武則天（水着）',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "武則天（水着）",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '千利休',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "千利休",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '山南敬助',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "山南敬助",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '壱与',
-    'rarity': 4,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "壱与",
+    "rarity": 4,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '呼延灼',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "呼延灼",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '黄飛虎',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "黄飛虎",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '九紋竜エリザ',
-    'rarity': 4,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "九紋竜エリザ",
+    "rarity": 4,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ブリトマート',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ブリトマート",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'グレゴリー・ラスプーチン',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "グレゴリー・ラスプーチン",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ニトクリス（オルタ）',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ニトクリス（オルタ）",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'テスカトリポカ',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "テスカトリポカ",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'トラロック',
-    'rarity': 4,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "トラロック",
+    "rarity": 4,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ククルカン',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ククルカン",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '女教皇ヨハンナ',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "女教皇ヨハンナ",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '高杉晋作',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "高杉晋作",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ラーヴァティアマト',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ラーヴァティアマト",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ドラコー',
-    'rarity': 5,
-    'class': '獣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ドラコー",
+    "rarity": 5,
+    "class": "獣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ロクスタ',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ロクスタ",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'セタンタ',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "セタンタ",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '果心居士',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "果心居士",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ビーマ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ビーマ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ドゥリーヨダナ',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ドゥリーヨダナ",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ドゥルガー',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ドゥルガー",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メドゥーサ（セイバー）',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メドゥーサ（セイバー）",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '救世主トネリコ',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "救世主トネリコ",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着キャストリア',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着キャストリア",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着鈴鹿御前',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着鈴鹿御前",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着クロエ',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着クロエ",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ノクナレア',
-    'rarity': 4,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ノクナレア",
+    "rarity": 4,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着メリュジーヌ',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着メリュジーヌ",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着バーゲスト',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着バーゲスト",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着バーヴァンシー',
-    'rarity': 4,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着バーヴァンシー",
+    "rarity": 4,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ワンジナ',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ワンジナ",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'プトレマイオス',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "プトレマイオス",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '杉谷善住坊',
-    'rarity': 3,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "杉谷善住坊",
+    "rarity": 3,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'テセウス',
-    'rarity': 3,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "テセウス",
+    "rarity": 3,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '武田信玄',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "武田信玄",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '永倉新八',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "永倉新八",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '雑賀孫一',
-    'rarity': 4,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "雑賀孫一",
+    "rarity": 4,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '上杉謙信',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "上杉謙信",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ネモサンタ',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ネモサンタ",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヤマトタケル',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヤマトタケル",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '源頼光/丑御前',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "源頼光/丑御前",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '由井正雪',
-    'rarity': 4,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "由井正雪",
+    "rarity": 4,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '宮本伊織',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "宮本伊織",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アンドロメダ',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アンドロメダ",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マリー・アントワネット（オルタ）',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マリー・アントワネット（オルタ）",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '耀星のハサン',
-    'rarity': 4,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "耀星のハサン",
+    "rarity": 4,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'モンテ・クリスト',
-    'rarity': 5,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "モンテ・クリスト",
+    "rarity": 5,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カリオストロ',
-    'rarity': 4,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カリオストロ",
+    "rarity": 4,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '蒼崎青子',
-    'rarity': 5,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "蒼崎青子",
+    "rarity": 5,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "補助",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '静希草十郎',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "静希草十郎",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '久遠寺有珠',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "久遠寺有珠",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '阿曇磯良',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "阿曇磯良",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'スペースエレシュキガル',
-    'rarity': 5,
-    'class': '獣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "スペースエレシュキガル",
+    "rarity": 5,
+    "class": "獣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'シエル',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "シエル",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着ニキチッチ',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着ニキチッチ",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着徐福',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着徐福",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'BBドバイ',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "BBドバイ",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着テノチティトラン',
-    'rarity': 4,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着テノチティトラン",
+    "rarity": 4,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヒロインXXオルタ',
-    'rarity': 4,
-    'class': '降',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヒロインXXオルタ",
+    "rarity": 4,
+    "class": "降",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '岸波白野（男性）',
-    'rarity': 4,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "岸波白野（男性）",
+    "rarity": 4,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '岸波白野（女性）',
-    'rarity': 4,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "岸波白野（女性）",
+    "rarity": 4,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'カズラドロップ',
-    'rarity': 5,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "カズラドロップ",
+    "rarity": 5,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ツタンカーメン',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ツタンカーメン",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ヴァン・ゴッホ（ランサー）',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ヴァン・ゴッホ（ランサー）",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ロウヒ',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ロウヒ",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アビゲイルサンタ',
-    'rarity': 4,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アビゲイルサンタ",
+    "rarity": 4,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ファンタズムーン',
-    'rarity': 5,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ファンタズムーン",
+    "rarity": 5,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'リチャード1世',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "リチャード1世",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ビショーネ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ビショーネ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '黒姫',
-    'rarity': 4,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "黒姫",
+    "rarity": 4,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '小野小町',
-    'rarity': 5,
-    'class': '術',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "小野小町",
+    "rarity": 5,
+    "class": "術",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ダンテ',
-    'rarity': 5,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ダンテ",
+    "rarity": 5,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'メタトロンジャンヌ',
-    'rarity': 5,
-    'class': '裁',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "メタトロンジャンヌ",
+    "rarity": 5,
+    "class": "裁",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'アショカ王',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "アショカ王",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'リリス',
-    'rarity': 5,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "リリス",
+    "rarity": 5,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'マシュパラディン',
-    'rarity': 5,
-    'class': '盾',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "マシュパラディン",
+    "rarity": 5,
+    "class": "盾",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'テュフォン',
-    'rarity': 5,
-    'class': '詐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "テュフォン",
+    "rarity": 5,
+    "class": "詐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'インドラ',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "インドラ",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'オルガマリー',
-    'rarity': 5,
-    'class': '獣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "オルガマリー",
+    "rarity": 5,
+    "class": "獣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着パッションリップ',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着パッションリップ",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着クリームヒルト',
-    'rarity': 4,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着クリームヒルト",
+    "rarity": 4,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着呼延灼',
-    'rarity': 4,
-    'class': '狂',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着呼延灼",
+    "rarity": 4,
+    "class": "狂",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着両儀式',
-    'rarity': 5,
-    'class': '月',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着両儀式",
+    "rarity": 5,
+    "class": "月",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着美遊',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着美遊",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '水着ティアマト',
-    'rarity': 5,
-    'class': '弓',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "水着ティアマト",
+    "rarity": 5,
+    "class": "弓",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ジュネスクレーン',
-    'rarity': 4,
-    'class': '分',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ジュネスクレーン",
+    "rarity": 4,
+    "class": "分",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': 'ネモ／ノア',
-    'rarity': 5,
-    'class': '騎',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "ネモ／ノア",
+    "rarity": 5,
+    "class": "騎",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '河上彦斎',
-    'rarity': 5,
-    'class': '殺',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "河上彦斎",
+    "rarity": 5,
+    "class": "殺",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '藤堂平助',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "藤堂平助",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Quick",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '原田左之助',
-    'rarity': 4,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "原田左之助",
+    "rarity": 4,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "単体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '近藤勇',
-    'rarity': 5,
-    'class': '剣',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "近藤勇",
+    "rarity": 5,
+    "class": "剣",
+    "noblePhantasm": {
+      "attribute": "Arts",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '星5エリザベート',
-    'rarity': 5,
-    'class': '槍',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "星5エリザベート",
+    "rarity": 5,
+    "class": "槍",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
   },
   {
-    'name': '終わりのエリザベート',
-    'rarity': 4,
-    'class': '讐',
-    'noblePhantasm': {
-      'attribute': 'Buster',
-      'target': '敵全体',
-      'effects': [
-        {},
+    "name": "終わりのエリザベート",
+    "rarity": 4,
+    "class": "讐",
+    "noblePhantasm": {
+      "attribute": "Buster",
+      "target": "全体",
+      "effects": [
+        {}
       ]
     },
-    'skills': [
-      {},
+    "skills": [
+      {}
     ]
-  },
-  ];
-  
-  export default characters;
+  }
+];
+
+export default characters;
