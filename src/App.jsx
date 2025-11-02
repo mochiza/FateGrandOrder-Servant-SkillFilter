@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import characters from "./data/characters";
+import "./App.css";
 
 const effectCategories = {
   special: {
@@ -18,11 +19,15 @@ const effectCategories = {
       "Quickカード性能をアップ",
       "宝具威力をアップ",
       "特攻状態を付与",
-      "NPを増やす",
+      "NPを増やす(<20%)",
+      "NPを増やす(20%)",
+      "NPを増やす(30%)",
+      "NPを増やす(50%)",
+      "NPを増やす(50%<)",
+      "毎ターンNP獲得状態を付与",
       "NP獲得量をアップ",
       "スターを獲得", // 対象を持たない
       "クリティカル威力をアップ",
-      "毎ターンNP獲得状態を付与",
       "毎ターンスター獲得状態を付与",
     ],
     targetless: ["スターを獲得"], // ★ 対象なし指定
@@ -219,36 +224,55 @@ export default function App() {
       </div>
 
       {/* スキル効果フィルター */}
-      <section style={{ marginBottom: 18, background: "#fff", color: "#000", padding: 12, borderRadius: 8 }}>
-        <h3 style={{ marginTop: 0, cursor: "pointer" }} onClick={() => toggleFilterSection("skills")}>
+      <section 
+        style={{ 
+          marginBottom: 18, 
+          background: "#fff", 
+          color: "#000", 
+          padding: 12, 
+          borderRadius: 8 
+        }}
+      >
+        <h3 
+          style={{ marginTop: 0, cursor: "pointer" }} 
+          onClick={() => toggleFilterSection("skills")}
+        >
           スキル効果 {filterOpen.skills ? "▲" : "▼"}
         </h3>
-        {filterOpen.skills && effectGroups.map(group => (
-          <div key={group.name} style={{ display: "flex", alignItems: "center", marginBottom: 8 }}>
-            <button onClick={() => toggleWholeEffectRow("skillEffects", group.name, false)} style={{ border: "none", background: "transparent", fontWeight: 600, cursor: "pointer", minWidth: 220, textAlign: "left", color: "#000" }}>
+        {filterOpen.skills && effectGroups.map((group, index) => (
+          <div 
+            key={group.name}
+            className={`effect-group ${index < effectGroups.length - 1 ? "with-border" : ""}`}
+          >
+            <button 
+              onClick={() => toggleWholeEffectRow("skillEffects", group.name, false)}
+              className="effect-button"
+            >
               {group.name}
             </button>
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <div className="effect-targets">
               {group.targets.length > 0 ? (
                 group.targets.map(target => {
                   const key = `${group.name}（${target}）`;
                   return (
-                    <label key={key} style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-                      <input type="checkbox" checked={filters.skillEffects.includes(key)} onChange={() => toggleEffectTarget("skillEffects", group.name, target)} />
-                      <span style={{ fontSize: 13 }}>{target}</span>
+                    <label key={key} className="effect-label">
+                      <input 
+                        type="checkbox"
+                        checked={filters.skillEffects.includes(key)}
+                        onChange={() => toggleEffectTarget("skillEffects", group.name, target)}
+                      />
+                      <span>{target}</span>
                     </label>
                   );
                 })
               ) : (
-                (() => {
-                  const key = group.name;
-                  return (
-                    <label key={key} style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-                      <input type="checkbox" checked={filters.skillEffects.includes(key)} onChange={() => toggleEffectTarget("skillEffects", group.name)} />
-                      <span style={{ fontSize: 13 }}></span>
-                    </label>
-                  );
-                })()
+                <label key={group.name} className="effect-label">
+                  <input 
+                    type="checkbox"
+                    checked={filters.skillEffects.includes(group.name)}
+                    onChange={() => toggleEffectTarget("skillEffects", group.name)}
+                  />
+                </label>
               )}
             </div>
           </div>
@@ -256,36 +280,55 @@ export default function App() {
       </section>
 
       {/* 宝具効果フィルター */}
-      <section style={{ marginBottom: 18, background: "#fff", color: "#000", padding: 12, borderRadius: 8 }}>
-        <h3 style={{ marginTop: 0, cursor: "pointer" }} onClick={() => toggleFilterSection("np")}>
+      <section 
+        style={{ 
+          marginBottom: 18, 
+          background: "#fff", 
+          color: "#000", 
+          padding: 12, 
+          borderRadius: 8 
+        }}
+      >
+        <h3 
+          style={{ marginTop: 0, cursor: "pointer" }} 
+          onClick={() => toggleFilterSection("np")}
+        >
           宝具効果 {filterOpen.np ? "▲" : "▼"}
         </h3>
-        {filterOpen.np && npEffectGroups.map(group => (
-          <div key={"np-" + group.name} style={{ display: "flex", alignItems: "center", marginBottom: 8 }}>
-            <button onClick={() => toggleWholeEffectRow("npEffects", group.name, true)} style={{ border: "none", background: "transparent", fontWeight: 600, cursor: "pointer", minWidth: 220, textAlign: "left", color: "#000" }}>
+        {filterOpen.np && npEffectGroups.map((group, index) => (
+          <div 
+            key={group.name} 
+            className={`effect-group ${index < npEffectGroups.length - 1 ? "with-border" : ""}`}
+          >
+            <button 
+              onClick={() => toggleWholeEffectRow("npEffects", group.name, true)} 
+              className="effect-button"
+            >
               {group.name}
             </button>
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <div className="effect-targets">
               {group.targets.length > 0 ? (
                 group.targets.map(target => {
                   const key = `${group.name}（${target}）`;
                   return (
-                    <label key={"np-" + key} style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-                      <input type="checkbox" checked={filters.npEffects.includes(key)} onChange={() => toggleEffectTarget("npEffects", group.name, target)} />
-                      <span style={{ fontSize: 13 }}>{target}</span>
+                    <label key={key} className="effect-label">
+                      <input 
+                        type="checkbox" 
+                        checked={filters.npEffects.includes(key)} 
+                        onChange={() => toggleEffectTarget("npEffects", group.name, target)} 
+                      />
+                      <span>{target}</span>
                     </label>
                   );
                 })
               ) : (
-                (() => {
-                  const key = group.name;
-                  return (
-                    <label key={key} style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-                      <input type="checkbox" checked={filters.npEffects.includes(key)} onChange={() => toggleEffectTarget("npEffects", group.name)} />
-                      <span style={{ fontSize: 13 }}></span>
-                    </label>
-                  );
-                })()
+                <label key={group.name} className="effect-label">
+                  <input 
+                    type="checkbox" 
+                    checked={filters.npEffects.includes(group.name)} 
+                    onChange={() => toggleEffectTarget("npEffects", group.name)} 
+                  />
+                </label>
               )}
             </div>
           </div>
